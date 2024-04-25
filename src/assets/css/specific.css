@@ -1,0 +1,43 @@
+/* Disable scroll */
+.disableScrollNav, .disableScrollChat {
+    overflow: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #697172;
+    border-radius: 10px;
+}
+
+/* Selection Hightlight */
+::selection {
+    background-color: #2f3132;
+    color: #f4f4f4;
+}
+
+/* ScrollDown Animation */
+.featureContent {
+    opacity: 0;
+    transition: 1s;
+    margin-left: -100px;
+}
+
+.showContent {
+    opacity: 1;
+    margin-left: -0px;
+}
+
+/* Slider */
+.current {
+    transform: translateX(0);
+    transition: 1s;
+}
+
+.next {
+    transform: translateX(-100%);
+    transition: 1s;
+}
